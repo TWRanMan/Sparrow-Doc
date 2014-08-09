@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   post ':controller/:action'
   get ':controller/:action/:project_name'
   post ':controller/:action/:project_name'
-  get ':controller/:action/:project_name/:plugin/:plugin_action'
-  post ':controller/:action/:project_name/:plugin/:plugin_action'
+  get ':controller/:action/:project_name/:plugin'
+  post ':controller/:action/:project_name/:plugin'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
