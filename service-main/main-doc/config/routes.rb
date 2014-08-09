@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+
+  get ':controller/:action'
+  post ':controller/:action'
+  get ':controller/:action/:project_name'
+  post ':controller/:action/:project_name'
+  get ':controller/:action/:project_name/:plugin/:plugin_action'
+  post ':controller/:action/:project_name/:plugin/:plugin_action'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
