@@ -16,7 +16,7 @@ module Plugins
 
     end
     def self.create(raw_data)
-      print raw_data
+      return raw_data
     end
   end
 end
