@@ -42,17 +42,17 @@ class ProjectsController < ApplicationController
     result[:db_status] = "success"
 
     begin
-      project_git = History::History.init
-      project_git_file = History::GIT_PROJECTS + '/project_'+ project_name
-      f = File.open(project_git_file,"w")
+      project_history = History::History.new(project_name)
+      project_git_file = project_history.project_git_path + "/" + project_name
+      f = File.open(project_git_file, "w")
       f.puts(ActiveSupport::JSON.decode(raw_data))
-      #f.write(raw_data) #why Chinese will failed for this function
       f.close
-      History::History.add_and_commit(project_git, project_name + "_demo")
+      project_history.add_and_commit_all(project_name + "_demo")
     rescue
       result[:history_status] = "error"
       return result
     end
+
     result[:history_status] = "success"
     return result
   end

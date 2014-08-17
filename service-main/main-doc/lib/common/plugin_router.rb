@@ -5,7 +5,7 @@ module Common
         when 'cucumber'
           Plugins::Cucumber.main(project_name, plugin_action, raw_data)
         else
-          return false
+          return {:plugin => "not found"}
       end
     end
 
