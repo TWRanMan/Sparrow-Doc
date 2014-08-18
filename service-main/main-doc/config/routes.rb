@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
 
-  get ':controller/:action'
+  get ':controller/:action/:key'
   post ':controller/:action'
-  get ':controller/:action/:project_name'
+  get ':controller/:action/:project_name/:key'
   post ':controller/:action/:project_name'
-  get ':controller/:action/:project_name/:plugin'
+  get ':controller/:action/:project_name/:plugin/:key'
   post ':controller/:action/:project_name/:plugin'
 
   # The priority is based upon order of creation: first created -> highest priority.
