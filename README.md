@@ -14,7 +14,7 @@ web component: angularJS, bootstrap, angular-UI
 * Install environment
 firstly, NODEJS runnable environment is needed.
 ```
-npm -g yo
+npm install -g yo
 cd webapp-main
 npm install
 bower install
