@@ -8,19 +8,28 @@ build tool is grunt
 * bootstrap
 * fontawesome
 #How to use
-## install node.js depends
+
+# webapp-main HOWTO
+## Introduction
 ```
+webapp is based on yeoman, contained YO, Grunt and bower.
+web component: angularJS, bootstrap, angular-UI
+```
+## Quick Start
+* Install environment
+firstly, NODEJS runnable environment is needed.
+```
+gem install compass
+npm install -g yo
+cd webapp-main
 npm install
+bower install --save
 ```
-## install front-end packages
-```
-bower install
-```
-## start development process
+* Start development service 
 ```
 grunt serve
 ```
-## build a distribute version
+* Generate dist
 ```
 grunt build
 ```

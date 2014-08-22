@@ -9,9 +9,10 @@
  */
 angular.module('webappMainApp')
   .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+        $scope.template = "this is value";
+        $scope.vars ={
+            a:{value:"a"},
+            b:{value:"b"},
+            c:{value:"c"}
+        }
   });
