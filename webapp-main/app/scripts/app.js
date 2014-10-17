@@ -15,7 +15,10 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'webappMainApp/demo',
+    'webappMainApp/projects',
+    'webappMainApp/project-nav'
   ])
   .config(function ($routeProvider) {
     $routeProvider

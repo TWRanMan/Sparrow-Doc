@@ -1,0 +1,7 @@
+<ul class="nav nav-pills pull-right">
+    <li ng-repeat="project in projects" ng-class="{ 'active': project.name === selectedProject.name }" ng-click="selectProject(project);">
+        <a ng-href="#/demo">
+            {{ project.name }}
+        </a>
+    </li>
+</ul>
